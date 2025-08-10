@@ -119,3 +119,36 @@ big_tuple = tuple(i for i in range(10000))
 tuple_time = time.time() - start
 
 print(f"Creating 10,000 items - List: {list_time:.6f}s, Tuple: {tuple_time:.6f}s")
+
+# 5. WHEN TO USE WHICH?
+print("\n5. WHEN TO USE WHICH?")
+print("\nUse LISTS when:")
+print("- You need to add/remove/change items")
+shopping_cart = ["milk", "eggs"]
+shopping_cart.append("bread")      # Add item
+shopping_cart.remove("eggs")       # Remove item
+shopping_cart[0] = "almond milk"   # Change item
+print("Shopping cart:", shopping_cart)
+
+print("\nUse TUPLES when:")
+print("- Data should never change (coordinates, RGB colors, etc.)")
+coordinates = (40.7128, -74.0060)  # NYC coordinates - should never change
+rgb_red = (255, 0, 0)              # Red color - should never change
+print("NYC coordinates:", coordinates)
+print("Red color RGB:", rgb_red)
+
+print("- Returning multiple values from functions")
+def get_name_age():
+    return "John", 25  # Returns a tuple
+
+name, age = get_name_age()
+print(f"Name: {name}, Age: {age}")
+
+# 6. MEMORY USAGE
+print("\n6. MEMORY USAGE:")
+import sys
+sample_list = [1, 2, 3, 4, 5]
+sample_tuple = (1, 2, 3, 4, 5)
+print(f"List memory: {sys.getsizeof(sample_list)} bytes")
+print(f"Tuple memory: {sys.getsizeof(sample_tuple)} bytes")
+print("Tuples use less memory!")
