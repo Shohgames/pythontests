@@ -1,3 +1,5 @@
+#__init__ is a initializer, self is the  
+
 class Rectangle:
     def __init__(self, x, y):
         self.test = x

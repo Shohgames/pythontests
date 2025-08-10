@@ -152,3 +152,16 @@ sample_tuple = (1, 2, 3, 4, 5)
 print(f"List memory: {sys.getsizeof(sample_list)} bytes")
 print(f"Tuple memory: {sys.getsizeof(sample_tuple)} bytes")
 print("Tuples use less memory!")
+
+
+print("\n")
+#Global var vs Local var
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
