@@ -138,4 +138,4 @@ test_cases = [
 ]
 
 for start, stop, step in test_cases:
-    explain_range_calculation(start, stop, step)
+    explain_range_calculation(start, stop, step)    
