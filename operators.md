@@ -48,6 +48,9 @@ Assignment operators are used to assign values to variables:
 
 :=	print(x := 3)	x = 3 print(x)
 
+im too lazy to paste the rest, just visit this link bruh<br>
+https://www.w3schools.com/python/python_operators.asp
+
 
 
 
